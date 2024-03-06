@@ -1,0 +1,3 @@
+/home/xiaohui/project/stu_define/cmake/CMakeFiles/Tutorial.dir
+/home/xiaohui/project/stu_define/cmake/CMakeFiles/edit_cache.dir
+/home/xiaohui/project/stu_define/cmake/CMakeFiles/rebuild_cache.dir
