@@ -15,20 +15,14 @@ configure_file(
 # so that we will find TutorialConfig.h
 include_directories("${PROJECT_BINARY_DIR}")
 
-# add the executable
-add_executable(Tutorial tutorial.cxx)
-
 # options
-option(USE_MYMATH "use tutorial provided math implementation" ON)
+option(USE_MYMATH "use tutorial provided math implementation" OFF)
 
 if (USE_MYMATH)
 include_directories("${PROJECT_SOURCE_DIR}/MathFunctions")
 add_subdirectory(MathFunctions)
 set(EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
 endif(USE_MYMATH)
-# build own libraries
-include_directories("${PROJECT_SOURCE_DIR}/MathFunctions")
-add_subdirectory(MathFunctions)
 # add the executable
 add_executable(Tutorial tutorial.cxx)
 target_link_libraries(Tutorial ${EXTRA_LIBS})
