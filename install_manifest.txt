@@ -1,0 +1,2 @@
+/home/xiaohui/project/stu_define/cmake/bin/Tutorial
+/home/xiaohui/project/stu_define/cmake/include/TutorialConfig.h

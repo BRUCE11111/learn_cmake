@@ -1,0 +1,52 @@
+Determining if the function log exists failed with the following output:
+Change Dir: /home/xiaohui/project/stu_define/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_57848/fast && /usr/bin/make  -f CMakeFiles/cmTC_57848.dir/build.make CMakeFiles/cmTC_57848.dir/build
+make[1]: Entering directory '/home/xiaohui/project/stu_define/cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57848.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=log -o CMakeFiles/cmTC_57848.dir/CheckFunctionExists.c.o -c /home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘log’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CheckFunctionExists.c:1:1: note: ‘log’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_57848
+/home/xiaohui/anaconda3/envs/pytorch/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57848.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=log -rdynamic CMakeFiles/cmTC_57848.dir/CheckFunctionExists.c.o -o cmTC_57848 
+/usr/bin/ld: CMakeFiles/cmTC_57848.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `log'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_57848.dir/build.make:99: cmTC_57848] Error 1
+make[1]: Leaving directory '/home/xiaohui/project/stu_define/cmake/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_57848/fast] Error 2
+
+
+
+Determining if the function exp exists failed with the following output:
+Change Dir: /home/xiaohui/project/stu_define/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_42b5e/fast && /usr/bin/make  -f CMakeFiles/cmTC_42b5e.dir/build.make CMakeFiles/cmTC_42b5e.dir/build
+make[1]: Entering directory '/home/xiaohui/project/stu_define/cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42b5e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=exp -o CMakeFiles/cmTC_42b5e.dir/CheckFunctionExists.c.o -c /home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘exp’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CheckFunctionExists.c:1:1: note: ‘exp’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_42b5e
+/home/xiaohui/anaconda3/envs/pytorch/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42b5e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=exp -rdynamic CMakeFiles/cmTC_42b5e.dir/CheckFunctionExists.c.o -o cmTC_42b5e 
+/usr/bin/ld: CMakeFiles/cmTC_42b5e.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `exp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_42b5e.dir/build.make:99: cmTC_42b5e] Error 1
+make[1]: Leaving directory '/home/xiaohui/project/stu_define/cmake/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_42b5e/fast] Error 2
+
+
+

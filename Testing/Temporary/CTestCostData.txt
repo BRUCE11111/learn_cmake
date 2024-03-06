@@ -1,0 +1,6 @@
+TutorialRuns 4 0.000557641
+TutorialComp25 4 0.000519103
+TutorialNegative 1 0.002054
+TutorialSmall 4 0.000509306
+TutorialUsage 4 0.000503661
+---

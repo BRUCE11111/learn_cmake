@@ -1,0 +1,88 @@
+Start testing: Mar 06 21:10 CST
+----------------------------------------------------------
+1/5 Testing: TutorialRuns
+1/5 Test: TutorialRuns
+Command: "/home/xiaohui/project/stu_define/cmake/Tutorial" "25"
+Directory: /home/xiaohui/project/stu_define/cmake
+"TutorialRuns" start time: Mar 06 21:10 CST
+Output:
+----------------------------------------------------------
+The square root of 25 is 5
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TutorialRuns" end time: Mar 06 21:10 CST
+"TutorialRuns" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: TutorialComp25
+2/5 Test: TutorialComp25
+Command: "/home/xiaohui/project/stu_define/cmake/Tutorial" "25"
+Directory: /home/xiaohui/project/stu_define/cmake
+"TutorialComp25" start time: Mar 06 21:10 CST
+Output:
+----------------------------------------------------------
+The square root of 25 is 5
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[25 is 5]
+"TutorialComp25" end time: Mar 06 21:10 CST
+"TutorialComp25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: TutorialNegative
+3/5 Test: TutorialNegative
+Command: "/home/xiaohui/project/stu_define/cmake/Tutorial" "36"
+Directory: /home/xiaohui/project/stu_define/cmake
+"TutorialNegative" start time: Mar 06 21:10 CST
+Output:
+----------------------------------------------------------
+The square root of 36 is 6
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[36 is 6]
+"TutorialNegative" end time: Mar 06 21:10 CST
+"TutorialNegative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: TutorialSmall
+4/5 Test: TutorialSmall
+Command: "/home/xiaohui/project/stu_define/cmake/Tutorial" "0.0001"
+Directory: /home/xiaohui/project/stu_define/cmake
+"TutorialSmall" start time: Mar 06 21:10 CST
+Output:
+----------------------------------------------------------
+The square root of 0.0001 is 0.01
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[0.0001 is 0.01]
+"TutorialSmall" end time: Mar 06 21:10 CST
+"TutorialSmall" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: TutorialUsage
+5/5 Test: TutorialUsage
+Command: "/home/xiaohui/project/stu_define/cmake/Tutorial"
+Directory: /home/xiaohui/project/stu_define/cmake
+"TutorialUsage" start time: Mar 06 21:10 CST
+Output:
+----------------------------------------------------------
+/home/xiaohui/project/stu_define/cmake/Tutorial Version 1.0
+Usage: /home/xiaohui/project/stu_define/cmake/Tutorial number
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[Usage:.*number]
+"TutorialUsage" end time: Mar 06 21:10 CST
+"TutorialUsage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 06 21:10 CST
