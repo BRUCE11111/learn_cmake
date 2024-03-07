@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/xiaohui/project/stu_define/cmake
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/home/xiaohui/anaconda3/envs/pytorch/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -84,6 +94,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/xiaohui/anaconda3/envs/pytorch/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/xiaohui/anaconda3/envs/pytorch/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/xiaohui/anaconda3/envs/pytorch/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/xiaohui/anaconda3/envs/pytorch/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/xiaohui/anaconda3/envs/pytorch/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/xiaohui/anaconda3/envs/pytorch/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -117,6 +172,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+MathFunctions/CMakeFiles/MakeTable.dir/rule:
+	cd /home/xiaohui/project/stu_define/cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MakeTable.dir/rule
+.PHONY : MathFunctions/CMakeFiles/MakeTable.dir/rule
+
+# Convenience name for target.
+MakeTable: MathFunctions/CMakeFiles/MakeTable.dir/rule
+.PHONY : MakeTable
+
+# fast build rule for target.
+MakeTable/fast:
+	cd /home/xiaohui/project/stu_define/cmake && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MakeTable.dir/build.make MathFunctions/CMakeFiles/MakeTable.dir/build
+.PHONY : MakeTable/fast
+
+# Convenience name for target.
 MathFunctions/CMakeFiles/MathFunctions.dir/rule:
 	cd /home/xiaohui/project/stu_define/cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/rule
 .PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
@@ -129,6 +198,30 @@ MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
 MathFunctions/fast:
 	cd /home/xiaohui/project/stu_define/cmake && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 .PHONY : MathFunctions/fast
+
+maketable.o: maketable.cxx.o
+.PHONY : maketable.o
+
+# target to build an object file
+maketable.cxx.o:
+	cd /home/xiaohui/project/stu_define/cmake && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MakeTable.dir/build.make MathFunctions/CMakeFiles/MakeTable.dir/maketable.cxx.o
+.PHONY : maketable.cxx.o
+
+maketable.i: maketable.cxx.i
+.PHONY : maketable.i
+
+# target to preprocess a source file
+maketable.cxx.i:
+	cd /home/xiaohui/project/stu_define/cmake && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MakeTable.dir/build.make MathFunctions/CMakeFiles/MakeTable.dir/maketable.cxx.i
+.PHONY : maketable.cxx.i
+
+maketable.s: maketable.cxx.s
+.PHONY : maketable.s
+
+# target to generate assembly for a file
+maketable.cxx.s:
+	cd /home/xiaohui/project/stu_define/cmake && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MakeTable.dir/build.make MathFunctions/CMakeFiles/MakeTable.dir/maketable.cxx.s
+.PHONY : maketable.cxx.s
 
 mysqrt.o: mysqrt.cxx.o
 .PHONY : mysqrt.o
@@ -161,8 +254,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... MakeTable"
 	@echo "... MathFunctions"
+	@echo "... maketable.o"
+	@echo "... maketable.i"
+	@echo "... maketable.s"
 	@echo "... mysqrt.o"
 	@echo "... mysqrt.i"
 	@echo "... mysqrt.s"

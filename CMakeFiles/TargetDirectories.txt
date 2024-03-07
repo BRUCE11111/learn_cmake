@@ -34,3 +34,12 @@
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/install.dir
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/install/local.dir
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/install/strip.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/MakeTable.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/test.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/edit_cache.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/rebuild_cache.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/list_install_components.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/install.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/install/local.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/install/strip.dir

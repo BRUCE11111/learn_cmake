@@ -18,7 +18,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CTest.cmake"
   "/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CTestTargets.cmake"
   "/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CTestUseLaunchers.cmake"
-  "/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CheckFunctionExists.c"
   "/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/CheckFunctionExists.cmake"
   "/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/xiaohui/anaconda3/envs/pytorch/share/cmake-3.22/Modules/Compiler/GNU-C.cmake"
@@ -34,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "MathFunctions/CMakeLists.txt"
   "TutorialConfig.h.in"
   )
 
@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "TutorialConfig.h"
   "DartConfiguration.tcl"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MathFunctions/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -81,4 +82,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
+  "MathFunctions/CMakeFiles/MakeTable.dir/DependInfo.cmake"
+  "MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake"
   )

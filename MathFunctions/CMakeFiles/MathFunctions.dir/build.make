@@ -69,10 +69,14 @@ include MathFunctions/CMakeFiles/MathFunctions.dir/progress.make
 # Include the compile flags for this target's objects.
 include MathFunctions/CMakeFiles/MathFunctions.dir/flags.make
 
+MathFunctions/Table.h: MathFunctions/MakeTable
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xiaohui/project/stu_define/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Table.h"
+	cd /home/xiaohui/project/stu_define/cmake/MathFunctions && ./MakeTable /home/xiaohui/project/stu_define/cmake/MathFunctions/Table.h
+
 MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o: MathFunctions/CMakeFiles/MathFunctions.dir/flags.make
 MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o: MathFunctions/mysqrt.cxx
 MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o: MathFunctions/CMakeFiles/MathFunctions.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohui/project/stu_define/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xiaohui/project/stu_define/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o"
 	cd /home/xiaohui/project/stu_define/cmake/MathFunctions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o -MF CMakeFiles/MathFunctions.dir/mysqrt.cxx.o.d -o CMakeFiles/MathFunctions.dir/mysqrt.cxx.o -c /home/xiaohui/project/stu_define/cmake/MathFunctions/mysqrt.cxx
 
 MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.i: cmake_force
@@ -93,7 +97,7 @@ MathFunctions_EXTERNAL_OBJECTS =
 MathFunctions/libMathFunctions.a: MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o
 MathFunctions/libMathFunctions.a: MathFunctions/CMakeFiles/MathFunctions.dir/build.make
 MathFunctions/libMathFunctions.a: MathFunctions/CMakeFiles/MathFunctions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xiaohui/project/stu_define/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libMathFunctions.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xiaohui/project/stu_define/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libMathFunctions.a"
 	cd /home/xiaohui/project/stu_define/cmake/MathFunctions && $(CMAKE_COMMAND) -P CMakeFiles/MathFunctions.dir/cmake_clean_target.cmake
 	cd /home/xiaohui/project/stu_define/cmake/MathFunctions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MathFunctions.dir/link.txt --verbose=$(VERBOSE)
 
@@ -105,7 +109,7 @@ MathFunctions/CMakeFiles/MathFunctions.dir/clean:
 	cd /home/xiaohui/project/stu_define/cmake/MathFunctions && $(CMAKE_COMMAND) -P CMakeFiles/MathFunctions.dir/cmake_clean.cmake
 .PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/clean
 
-MathFunctions/CMakeFiles/MathFunctions.dir/depend:
+MathFunctions/CMakeFiles/MathFunctions.dir/depend: MathFunctions/Table.h
 	cd /home/xiaohui/project/stu_define/cmake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xiaohui/project/stu_define/cmake /home/xiaohui/project/stu_define/cmake/MathFunctions /home/xiaohui/project/stu_define/cmake /home/xiaohui/project/stu_define/cmake/MathFunctions /home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/depend
 
