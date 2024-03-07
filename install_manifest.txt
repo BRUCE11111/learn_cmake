@@ -1,2 +1,4 @@
-/home/xiaohui/project/stu_define/cmake/bin/Tutorial
-/home/xiaohui/project/stu_define/cmake/include/TutorialConfig.h
+/home/xiaohui/project/stu_define/cmake/_CPack_Packages/Linux/TZ/Tutorial-1.0.1-Linux/bin/Tutorial
+/home/xiaohui/project/stu_define/cmake/_CPack_Packages/Linux/TZ/Tutorial-1.0.1-Linux/include/TutorialConfig.h
+/home/xiaohui/project/stu_define/cmake/_CPack_Packages/Linux/TZ/Tutorial-1.0.1-Linux/bin/libMathFunctions.a
+/home/xiaohui/project/stu_define/cmake/_CPack_Packages/Linux/TZ/Tutorial-1.0.1-Linux/include/MathFunctions.h

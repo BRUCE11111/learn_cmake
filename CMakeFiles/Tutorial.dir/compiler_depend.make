@@ -77,8 +77,11 @@ CMakeFiles/Tutorial.dir/tutorial.cxx.o: tutorial.cxx \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  TutorialConfig.h
+  TutorialConfig.h \
+  MathFunctions/MathFunctions.h
 
+
+MathFunctions/MathFunctions.h:
 
 TutorialConfig.h:
 

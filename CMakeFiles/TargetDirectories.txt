@@ -27,6 +27,8 @@
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/ContinuousCoverage.dir
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/ContinuousMemCheck.dir
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/ContinuousSubmit.dir
+/home/xiaohui/project/stu_define/cmake/CMakeFiles/package.dir
+/home/xiaohui/project/stu_define/cmake/CMakeFiles/package_source.dir
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/test.dir
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/edit_cache.dir
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/rebuild_cache.dir
@@ -36,6 +38,8 @@
 /home/xiaohui/project/stu_define/cmake/CMakeFiles/install/strip.dir
 /home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/MakeTable.dir
 /home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/package.dir
+/home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/package_source.dir
 /home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/test.dir
 /home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/edit_cache.dir
 /home/xiaohui/project/stu_define/cmake/MathFunctions/CMakeFiles/rebuild_cache.dir
